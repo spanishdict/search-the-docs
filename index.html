@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+     body {
+         width: 100%;
+         margin: 0 auto;
+         font-size: large;
+         text-align: center;
+     }
+     .search-container {
+         width: 600px;
+         margin: 0 auto;
+         padding-top: 150px;
+     }
+     input {
+         font-size: large;
+     }
+     img {
+         display: block;
+         margin: 0 auto;
+         padding: 20px;
+     }
+     input[type=text] {
+         padding: 5px;
+         width: 70%;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <img src="https://avatars0.githubusercontent.com/u/1336910?v=3&s=200">
+      <input id="search-github" type="text" autofocus placeholder="Search Markdown docs on Github" onKeyUp="(function(e) {if ((e.keyCode ? e.keyCode : e.which) == 13) document.getElementById('search-github-button').onclick();})(event)"></input>
+      <input id="search-github-button" type="button" onclick="var q = document.getElementById('search-github').value; if (q.length > 0) window.location.href='https://github.com/search?l=&q=' + encodeURIComponent(q) + '+user%3Aspanishdict+language%3AMarkdown&ref=advsearch&type=Code&utf8=%E2%9C%93'" value="Search"></input>
+    </div>
+  </body>
+</html>
